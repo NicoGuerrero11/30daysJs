@@ -40,7 +40,7 @@ do{
 // }
 // ---------------------------------
 
-for(i = 0; i <= 100; i++){
+/* for(i = 0; i <= 100; i++){
     // if (i % 2 == 0){console.log(i);}
 }
 
@@ -48,4 +48,37 @@ for(i = 0; i <= 100; i++){
     if (i % 2 == 0){
         continue
     }else{console.log(i);}
+} */
+
+/* let sum = 0;
+for (i = 0; i <= 100; i++){
+    sum += i;
 }
+console.log(sum); */
+
+/* let sumEven = 0;
+let sumOdds = 0;
+const arr = [];
+for(i = 0; i < 101 ; i++){
+    if (i % 2 == 0){
+        sumEven += i;
+    }else{
+        sumOdds += i;
+    }
+}
+console.log(`The sum of all evens from 0 to 100 is ${sumEven}. And the sum of all odds from 0 to 100 is ${sumOdds}.`);
+arr.push(sumEven, sumOdds);
+console.log(arr); */
+
+function random(max, min){
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const arr = [];
+
+for(i = 0; i < 5; i++){
+    let num = random(50, 10);
+    arr.push(num)
+}
+
+console.log(arr);
